@@ -1,0 +1,84 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .container {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Diabetes Prediction</h1>
+        <form action="/predict" method="post">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="pregnancies">Pregnancies:</label>
+                    <input type="number" class="form-control" name="pregnancies" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="glucose">Glucose:</label>
+                    <input type="number" class="form-control" name="glucose" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="blood_pressure">Blood Pressure:</label>
+                    <input type="number" class="form-control" name="blood_pressure" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="skin_thickness">Skin Thickness:</label>
+                    <input type="number" class="form-control" name="skin_thickness" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="insulin">Insulin:</label>
+                    <input type="number" class="form-control" name="insulin" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="bmi">BMI (Body Mass Index):</label>
+                    <input type="number" step="0.001" class="form-control" name="bmi" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="diabetes_pedigree_function">Diabetes Pedigree Function:</label>
+                    <input type="number" step="0.001" class="form-control" name="diabetes_pedigree_function" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="age">Age:</label>
+                    <input type="number" class="form-control" name="age" required>
+                </div>
+            </div>
+
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Predict</button>
+        </form>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

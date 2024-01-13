@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <!-- CSS Files -->
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/teams/team-2/assets/css/team-2.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!-- CODE FOR THE NAVBAR-->
+    <style>
+        .navbar {
+            background-color: #17a2b8; /* Navbar background color */
+        }
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #ffffff; /* Navbar text color */
+        }
+        .navbar-nav .nav-item .nav-link:hover {
+            background-color: #117a8b; /* Hover background color */
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Diabetes Prediction System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#hel ">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <!-- Update the href attribute to point to your predict.html file -->
+        <a class="nav-link" href="#form_prediction">Predict</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#supervision">Supervisor</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#team">Team</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">System Information</a>
+          <a class="dropdown-item" href="#">Tips for healthy life</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">More about Company</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    <!-- Bootstrap JS and Popper.js scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--Code for NAVBAR ends here  -->
+
+<!--   ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--   COde for carousal starts from here-->
+<div class="container">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+             <img src="https://images.pexels.com/photos/2383010/pexels-photo-2383010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Chicago" style="width:100%; height:60vh;">
+
+
+      </div>
+
+      <div class="item">
+           <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Los Angeles" style="width:100%; height:60vh;">
+
+      </div>
+
+      <div class="item">
+        <img src="https://images.pexels.com/photos/2280568/pexels-photo-2280568.jpeg?auto=compress&cs=tinysrgb&w=600" alt="New york" style="width:100%; height:60vh;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--   Code for carousal ends here-->
+
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--   Form code starts from here-->
+   <!-- form code is here  -->
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .container {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="form_prediction">
+        <h1 class="text-center mb-4">Diabetes Prediction</h1>
+        <form action="/predict" method="post" id="form">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="pregnancies">Pregnancies:</label>
+                    <input type="number" class="form-control" name="pregnancies" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="glucose">Glucose:</label>
+                    <input type="number" class="form-control" name="glucose" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="blood_pressure">Blood Pressure:</label>
+                    <input type="number" class="form-control" name="blood_pressure" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="skin_thickness">Skin Thickness:</label>
+                    <input type="number" class="form-control" name="skin_thickness" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="insulin">Insulin:</label>
+                    <input type="number" class="form-control" name="insulin" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="bmi">BMI (Body Mass Index):</label>
+                    <input type="number" step="0.001" class="form-control" name="bmi" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="diabetes_pedigree_function">Diabetes Pedigree Function:</label>
+                    <input type="number" step="0.001" class="form-control" name="diabetes_pedigree_function" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="age">Age:</label>
+                    <input type="number" class="form-control" name="age" required>
+                </div>
+            </div>
+
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Predict</button>
+        </form>
+    </div>
+<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--    Form code end here-->
+
+<!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--    Supervisor code is here-->
+
+<section class="py-3 py-md-5 py-xl-8">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+        <h2 class="fs-6 text-secondary mb-2 text-uppercase text-center">Our Team</h2>
+        <p class="display-5 mb-4 mb-md-5 text-center">With Our Team, you can expect personalized attention and engaging designs.</p>
+        <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+      </div>
+    </div>
+  </div>
+<!--Supervisor code-->
+     <!-- Team -->
+<section class="py-3 py-md-5 py-xl-8">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+        <h2 class="fs-6 text-secondary mb-2 text-uppercase text-center" id="supervision">Under Supervision of</h2>
+        <p class="display-5 mb-4 mb-md-5 text-center">Dr.Zahid Iqbal</p>
+        <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+      </div>
+    </div>
+  </div>
+
+ <div class="container overflow-hidden">
+    <div class="row gy-4 gy-lg-0 justify-content-center align-items-center">
+        <!-- Third Team Member -->
+        <div class="col-12 col-lg-7"> <!-- Set the width to 60% on larger screens -->
+            <div class="card border-0 text-center">
+                <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover rounded-circle">
+                    <a href="#!">
+                        <img class="img-fluid bsb-scale bsb-hover-scale-up rounded-circle" loading="lazy" src="https://uog.edu.pk/uog/upload/employees/20170502143602zahid%20(2).jpg" alt="Taytum Elia">
+                    </a>
+                    <figcaption>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                        </svg>
+                        <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
+                    </figcaption>
+                </figure>
+                <div class="card-body border bg-white p-4">
+                    <h2 class="card-title h4 fw-bold mb-3">Dr.Zahid Iqbal</h2>
+                    <p class="card-text text-secondary">Dr. Zahid Iqbal a Gold Medalist PhD holder,enthusiastic Machine learning Engineer.  </p>
+                </div>
+                <div class="card-footer border border-top-0 bg-white p-4">
+                    <ul class="nav mb-0 bsb-nav-sep">
+                        <li class="nav-item text-secondary">
+                            <a class="nav-link link-secondary p-0 pe-3 d-inline-flex align-items-center" href="#!">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-brush text-primary" viewBox="0 0 16 16">
+                                    <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078 .132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z" />
+                                </svg>
+                                <span class="ms-2 fs-6">Assistant Professor</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!--    |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--    Supervisor codes ends here-->
+<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--    Development team code starts from here-->
+ <section class="py-3 py-md-5 py-xl-8">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+
+        <p class="display-5 mb-4 mb-md-5 text-center" id ="team">Development Team</p>
+
+
+        <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+      </div>
+    </div>
+  </div>
+<!--    team code-->
+ <section class="container overflow-hidden">
+    <div class="row gy-4 gy-lg-0">
+        <div class="col-12 col-lg-4 mb-4">
+            <div class="card border-0">
+                <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover text-center d-flex justify-content-end">
+                    <a href="#!">
+                        <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="https://media.licdn.com/dms/image/D4D35AQGeUKema-i6Ig/profile-framedphoto-shrink_400_400/0/1674331513222?e=1705651200&v=beta&t=yUy4GPxqxdnIiValhdguVKxXmXc00vjuADEYirqLHFU" alt="Flora Nyra">
+                    </a>
+                    <figcaption>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                             <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+              </svg>
+                        <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
+                    </figcaption>
+                </figure>
+          <div class="card-body border bg-white p-4">
+            <h2 class="card-title h4 fw-bold mb-3">Khurram Shahzad</h2>
+            <p class="card-text text-secondary">Hello! I am Khurram Shahzad, a student from Computer Science Department of University of Gujrat.</p>
+          </div>
+          <div class="card-footer border border-top-0 bg-white p-4">
+            <ul class="nav mb-0 bsb-nav-sep">
+              <li class="nav-item text-secondary">
+                <a class="nav-link link-secondary p-0 pe-3 d-inline-flex align-items-center" href="#!">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-lightbulb text-primary" viewBox="0 0 16 16">
+                    <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
+                  </svg>
+                  <span class="ms-2 fs-6">Software Engineer</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 mb-4">
+        <div class="card border-0">
+          <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+            <a href="#!">
+              <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src=" https://media-mct1-1.cdn.whatsapp.net/v/t61.24694-24/348521938_6510721798940145_6080854911639553638_n.jpg?ccb=11-4&oh=01_AdT76BCMZE70QIQRci1GLpW0CJwTecSZ8MCxn5h38SZ5Gw&oe=65AE8121&_nc_sid=e6ed6c&_nc_cat=102" alt="James Levi">
+            </a>
+            <figcaption>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+               </svg>
+                        <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
+                    </figcaption>
+                </figure>
+          <div class="card-body border bg-white p-4">
+            <h2 class="card-title h4 fw-bold mb-3">Usama Rafaqat</h2>
+            <p class="card-text text-secondary">Hello! I am Usama Rafaqat, a student from Computer Science Department of University of Gujrat. </p>
+          </div>
+          <div class="card-footer border border-top-0 bg-white p-4">
+            <ul class="nav mb-0 bsb-nav-sep">
+              <li class="nav-item text-secondary">
+                <a class="nav-link link-secondary p-0 pe-3 d-inline-flex align-items-center" href="#!">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-layers text-primary" viewBox="0 0 16 16">
+                    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0l3.515-1.874zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z" />
+                  </svg>
+                  <span class="ms-2 fs-6">Mern Developer</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--     Team code ends here-->
+     <!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+ <!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--     Footer code starts from here-->
+     <!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+
+<!--footer-->
+<footer class="bg-body-tertiary text-center">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+      data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="https://www.facebook.com/profile.php?id=61552199423170"
+        role="button"
+        ><i class="fab fa-facebook-f">Facebook</i
+      ></a>
+
+
+
+<!--      &lt;!&ndash; Instagram &ndash;&gt;-->
+<!--      <a-->
+<!--        data-mdb-ripple-init-->
+<!--        class="btn text-white btn-floating m-1"-->
+<!--        style="background-color: #ac2bac;"-->
+<!--        href="#!"-->
+<!--        role="button"-->
+<!--        ><i class="fab fa-instagram"></i-->
+<!--      ></a>-->
+
+      <!-- Linkedin -->
+      <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        style="background-color: #0082ca;"
+        href="https://www.linkedin.com/in/khurram-shahzad-51ab65239/"
+        role="button"
+        ><i class="fab fa-linkedin-in">Linkedin</i
+      ></a>
+      <!-- Github -->
+      <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        style="background-color: #333333;"
+        href="https://github.com/KhurramShahzadDev"
+        role="button"
+        ><i class="fab fa-github">Github</i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 12-01-2024 UOG COMPUTER SCIENCE
+    <a class="text-body" href="#">20021519-036@uog.edu.pk</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+</body>
+</html>
